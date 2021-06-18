@@ -20,5 +20,6 @@ int main(void)
 		putchar (letterup);
 		letterup++;
 	}
+	putchar ('\n');
 	return (0);
 }
