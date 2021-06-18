@@ -7,5 +7,18 @@
 
 int main(void)
 {
+	int letterlo = 'a';
+	int letterup = 'A';
+
+	while (letterlo <= 'z')
+	{
+		putchar (letterlo);
+		letterlo++;
+	}
+	while (letterup <= 'Z')
+	{
+		putchar (letterup);
+		letterup++;
+	}
 	return (0);
 }
