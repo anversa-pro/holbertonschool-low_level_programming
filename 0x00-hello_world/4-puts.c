@@ -1,10 +1,12 @@
 #include <stdio.h>
-/*
- * No var nedded only main function.
+
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
 */
-int main(void) /* Simple main */
+
+int main(void)
 {
-/* Prints an specific text */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
