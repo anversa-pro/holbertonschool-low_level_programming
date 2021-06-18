@@ -14,6 +14,6 @@ int main(void)
 	long long varlongl;
 	float varfloat;
 	/*printing vars*/
-	puts("Size of a char: %lu byte(s)\n", sizeof(varchar));
+	printf("Size of a char: %d byte(s)\n", sizeof(varchar));
 	return (0);
 }
