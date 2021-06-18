@@ -13,7 +13,7 @@ int main(void)
 
 	while (digit10 <= '9')
 	{
-		digit1 = digit10 + '1';
+		digit1 = digit10 + 1;
 		while (digit1 <= '9')
 		{
 			number = (digit10 * 10) + digit1;
