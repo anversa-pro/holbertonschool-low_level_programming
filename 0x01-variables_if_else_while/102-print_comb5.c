@@ -36,7 +36,7 @@ int main(void)
 					digit1b++;
 				}
 				digit10b++;
-				digit1b = 0;
+				digit1b = 1;
 			}
 			digit1b = digit1a + 1;
 			digit10b = digit10a;
