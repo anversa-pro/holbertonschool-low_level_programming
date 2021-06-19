@@ -7,12 +7,13 @@
 
 int main(void)
 {
+	int digit10a = 0;
 	int digit1a = 0;
 	int digit10b = 0;
 	int digit1b = 0;
 	int number = 0;
 
-	for (int digit10a = 0 ; digit10a <= 8 ; digit10a++)
+	for (digit10a = 0; digit10a <= 8; digit10a++)
 	{
 		while (digit1a <= 9)
 		{
