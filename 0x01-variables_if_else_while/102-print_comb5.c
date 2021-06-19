@@ -26,7 +26,7 @@ int main(void)
 					putchar (' ');
 					putchar (digit10b);
 					putchar (digit1b);
-					if (digit10a != '8' && digit1a != '9')
+					if (digit10a <= '8' && digit1a <= '9')
 					{
 						putchar (',');
 						putchar (' ');
