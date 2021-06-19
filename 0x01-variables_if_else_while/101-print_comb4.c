@@ -9,11 +9,12 @@ int main(void)
 {
 	int digit100 = '0';
 	int digit10 = '0';
-	int digit1 = '1';
+	int digit1 = '0';
 
 	while (digit100 <= '9')
 	{
 		digit10++;
+		digit1++;
 		while (digit10 <= '9')
 		{
 			digit1++;
