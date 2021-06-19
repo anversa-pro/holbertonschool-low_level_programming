@@ -12,9 +12,9 @@ int main(void)
 
 	while (digit10 <= '9')
 	{
-		putchar (digit10);
 		while (digit1 <= '9')
 		{
+			putchar (digit10);
 			putchar (digit1);
 			if (digit10 != '8')
 			{
