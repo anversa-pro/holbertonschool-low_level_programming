@@ -8,14 +8,14 @@
 int main(void)
 {
 	int digit10 = '0';
-	int digit1;
+	int digit1 = '0';
 
 	while (digit10 <= '9')
 	{
+		putchar (digit10);
 		digit1 = digit10 + '1';
 		while (digit1 <= '9')
 		{
-			putchar (digit10);
 			putchar (digit1);
 			if (digit10 != '8')
 			{
