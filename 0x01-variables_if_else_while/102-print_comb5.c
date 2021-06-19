@@ -14,9 +14,9 @@ int main(void)
 
 	while (digit10a <= '9')
 	{
-		digit1b++;
 		while (digit1a <= '9')
 		{
+			digit1b++;
 			while (digit10b <= '9')
 			{
 				while (digit1b <= '9')
