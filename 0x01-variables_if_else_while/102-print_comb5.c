@@ -11,6 +11,7 @@ int main(void)
 	int digit1a = 0;
 	int digit10b = 0;
 	int digit1b = 0;
+	int number = 0;
 
 	while (digit10a <= 0)
 	{
@@ -26,7 +27,8 @@ int main(void)
 					putchar (' ');
 					putchar (digit10b + '0');
 					putchar (digit1b + '0');
-					if (digit10a <= 8 && digit1b < 9)
+					number = (digit10a * 1000) + (digit1a * 100) + (digit10b * 10) + digit1b;
+					if (number < 8999)
 					{
 						putchar (',');
 						putchar (' ');
