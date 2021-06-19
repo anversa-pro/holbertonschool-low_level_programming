@@ -44,7 +44,8 @@ int main(void)
 		}
 		digit10a++;
 		digit1a = 0;
-		digit10b = digit10a;
+		digit1b = digit1a;
+		digit10b = 0;
 	}
 	putchar ('\n');
 	return (0);
