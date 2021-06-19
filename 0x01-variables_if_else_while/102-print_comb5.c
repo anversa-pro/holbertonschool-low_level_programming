@@ -17,7 +17,7 @@ int main(void)
 	{
 		for (digit1a = 0; digit1a <= 9; digit1a++)
 		{
-			for (digit10b = 0; digit10b <= 9; digit10b++)
+			while (digit10b <= 9)
 			{
 				while (digit1b <= 9)
 				{
@@ -34,6 +34,7 @@ int main(void)
 					}
 					digit1b++;
 				}
+				digit10b++;
 				digit1b = 0;
 			}
 			digit1b = digit1a + 1;
