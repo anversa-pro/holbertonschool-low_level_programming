@@ -26,7 +26,7 @@ int main(void)
 					putchar (' ');
 					putchar (digit10b);
 					putchar (digit1b);
-					if (digit10a <= '8' && digit1a <= '9')
+					if (digit10a == '8' && digit1a == '9' && digit10b == '9' && digit1b < '9')
 					{
 						putchar (',');
 						putchar (' ');
@@ -41,7 +41,7 @@ int main(void)
 			digit10b = digit10a;
 		}
 		digit10a++;
-		digit1a = digit10a;
+		digit1a = '0';
 		digit10b = digit10a;
 	}
 	putchar ('\n');
