@@ -14,7 +14,7 @@ int main(void)
 
 	while (digit10a <= '9')
 	{
-		digit1a++;
+		digit1b++;
 		while (digit1a <= '9')
 		{
 			putchar (digit10a);
@@ -25,7 +25,6 @@ int main(void)
 			}
 			while (digit10b <= '9')
 			{
-				digit1b++;
 				while (digit1b <= '9')
 				{
 					putchar (digit10b);
@@ -33,6 +32,7 @@ int main(void)
 					if (digit1a != '8')
 					{
 						putchar (',');
+						putchar (' ');
 					}
 					digit1b++;
 				}
@@ -40,6 +40,8 @@ int main(void)
 				digit1b = digit10b;
 			}
 			digit1a++;
+			digit1b = digit1a;
+			digit10b = digit10a;
 		}
 		digit10a++;
 		digit1a = digit10a;
