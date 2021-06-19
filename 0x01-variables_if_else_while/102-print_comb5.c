@@ -7,15 +7,15 @@
 
 int main(void)
 {
-	int digit10a = 0;
-	int digit1a = 0;
+	int digit10a;
+	int digit1a;
 	int digit10b = 0;
 	int digit1b = 0;
 	int number = 0;
 
 	for (digit10a = 0; digit10a <= 8; digit10a++)
 	{
-		while (digit1a <= 9)
+		for (digit1a = 0; digit1a <= 9; digit1a++)
 		{
 			digit1b++;
 			while (digit10b <= 9)
@@ -38,13 +38,12 @@ int main(void)
 				digit10b++;
 				digit1b = 0;
 			}
-			digit1a++;
 			digit1b = digit1a;
 			digit10b = digit10a;
 		}
 		digit1a = 0;
 		digit1b = digit1a;
-		digit10b = digit10a;
+		digit10b = digit10a + 1;
 	}
 	putchar ('\n');
 	return (0);
