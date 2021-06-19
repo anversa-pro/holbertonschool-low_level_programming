@@ -9,7 +9,7 @@ int main(void)
 {
 	int digit100 = '0';
 	int digit10 = '0';
-	int digit1 = '0';
+	int digit1 = '1';
 
 	while (digit100 <= '9')
 	{
@@ -22,7 +22,7 @@ int main(void)
 				putchar (digit100);
 				putchar (digit10);
 				putchar (digit1);
-				if (digit100 != '7')
+				if (digit100 != '8')
 				{
 					putchar (',');
 					putchar (' ');
@@ -34,6 +34,7 @@ int main(void)
 		}
 		digit100++;
 		digit10 = digit100;
+		digit1 = digit10;
 	}
 	putchar ('\n');
 	return (0);
