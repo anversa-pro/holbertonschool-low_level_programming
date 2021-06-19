@@ -42,6 +42,7 @@ int main(void)
 		}
 		digit10a++;
 		digit1a = digit10a;
+		digit10b = digit10a;
 	}
 	putchar ('\n');
 	return (0);
