@@ -23,14 +23,14 @@ int main(void)
 			{
 				putchar (' ');
 			}
-			while (digital10b <= '9')
+			while (digit10b <= '9')
 			{
 				digit1b++;
 				while (digit1b <= '9')
 				{
 					putchar (digit10b);
 					putchar (digit1b);
-					if (digir1a != '8')
+					if (digit1a != '8')
 					{
 						putchar (',');
 					}
