@@ -8,10 +8,11 @@
 int main(void)
 {
 	int digit10 = '0';
-	int digit1 = '1';
+	int digit1 = '0';
 
 	while (digit10 <= '9')
 	{
+		digit1++;
 		while (digit1 <= '9')
 		{
 			putchar (digit10);
@@ -24,6 +25,7 @@ int main(void)
 			digit1++;
 		}
 		digit10++;
+		digit1 = digit10;
 	}
 	putchar ('\n');
 	return (0);
