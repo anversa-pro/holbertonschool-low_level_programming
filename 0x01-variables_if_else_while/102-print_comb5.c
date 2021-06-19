@@ -27,8 +27,8 @@ int main(void)
 					putchar (' ');
 					putchar (digit10b + '0');
 					putchar (digit1b + '0');
-					number = (digit10a * 1000) + (digit1a * 100) + (digit10b * 10) + digit1b;
-					if (number < 9899)
+					number = (digit10a * 10) + digit1a;
+					if (number < 98)
 					{
 						putchar (',');
 						putchar (' ');
@@ -41,7 +41,7 @@ int main(void)
 			digit1b = digit1a + 1;
 			digit10b = digit10a;
 		}
-		digit1b = digit1a + 1;
+		/* digit1b = digit1a + 1; */
 		digit10b = digit10a;
 	}
 	putchar ('\n');
