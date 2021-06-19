@@ -26,7 +26,7 @@ int main(void)
 					putchar (' ');
 					putchar (digit10b);
 					putchar (digit1b);
-					if (digit1a != '8')
+					if (digit1a != '8' $$ digit10a != '9')
 					{
 						putchar (',');
 						putchar (' ');
