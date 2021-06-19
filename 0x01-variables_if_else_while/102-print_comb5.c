@@ -29,10 +29,8 @@ int main(void)
 					putchar (digit1b + '0');
 					number = (digit10a * 1000) + (digit1a * 100) + (digit10b * 10) + digit1b;
 					if (number < 8999)
-					{
 						putchar (',');
 						putchar (' ');
-					}
 					digit1b++;
 				}
 				digit10b++;
