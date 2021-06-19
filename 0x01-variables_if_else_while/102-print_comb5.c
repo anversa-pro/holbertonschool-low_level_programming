@@ -19,9 +19,25 @@ int main(void)
 		{
 			putchar (digit10a);
 			putchar (digit1a);
-			if (digit10a != '8')
+			if (digit1a != '8')
 			{
 				putchar (' ');
+			}
+			while (digital10b <= '9')
+			{
+				digit1b++;
+				while (digit1b <= '9')
+				{
+					putchar (digit10b);
+					putchar (digit1b);
+					if (digir1a != '8')
+					{
+						putchar (',');
+					}
+					digit1b++;
+				}
+				digit10b++;
+				digit1b = digit10b;
 			}
 			digit1a++;
 		}
