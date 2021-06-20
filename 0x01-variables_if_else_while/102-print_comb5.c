@@ -27,7 +27,7 @@ int main(void)
 					putchar (' ');
 					putchar (digit10b + '0');
 					putchar (digit1b + '0');
-					if (digit10a <= 9 && digit1a < 9)
+					if ((digit10a * 10) + digit1a < 99)
 					{
 						putchar (',');
 						putchar (' ');
