@@ -13,10 +13,10 @@ int main(void)
 	int digit1b = 0;
 	int number = 0;
 
-	for (digit10a = 0; digit10a <= 9; digit10a++)
+	while (digit10a <= 9)
 	{
 		digit10b = digit10a;
-		for (digit1a = 0; digit1a <= 9; digit1a++)
+		while (digit1a <= 9)
 		{
 			digit1b++;
 			while (digit10b <= 9)
@@ -39,9 +39,11 @@ int main(void)
 				digit10b++;
 				digit1b = 0;
 			}
+			digit1a++;
 			digit1b = digit1a + 1;
 			digit10b = digit10a;
 		}
+		digit10a++;
 	}
 	putchar ('\n');
 	return (0);
