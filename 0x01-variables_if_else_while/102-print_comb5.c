@@ -7,42 +7,25 @@
 
 int main(void)
 {
-	int digit10a = 0;
-	int digit1a = 0;
-	int digit10b = 0;
-	int digit1b = 0;
+	int duet1 = 00;
+	int duet2 = 00;
 
-	while (digit10a <= 9)
+	while (duet1 <= 98)
 	{
-		while (digit1a <= 9)
+		duet2 = duet1 + 01;
+		while (duet2 <= 99)
 		{
-			digit1b++;
-			while (digit10b <= 9)
+			putchar (duet1 + '0');
+			putchar (' ');
+			putchar (duet2 + '0');
+			if (duet1 < 98)
 			{
-				while (digit1b <= 9)
-				{
-					putchar (digit10a + '0');
-					putchar (digit1a + '0');
-					putchar (' ');
-					putchar (digit10b + '0');
-					putchar (digit1b + '0');
-					if ((digit10a * 10) + digit1a < 99)
-					{
-						putchar (',');
-						putchar (' ');
-					}
-					digit1b++;
-				}
-				digit10b++;
-				digit1b = 0;
+				putchar (',');
+				putchar (' ');
 			}
-			digit1a++;
-			digit1b = digit1a;
-			digit10b = digit10a;
+			duet2++;
 		}
-		digit10a++;
-		digit1b = digit1a;
-		digit10b = digit10a;
+		duet1++;
 	}
 	putchar ('\n');
 	return (0);
