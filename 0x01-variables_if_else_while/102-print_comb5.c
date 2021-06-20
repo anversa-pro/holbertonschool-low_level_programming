@@ -11,7 +11,6 @@ int main(void)
 	int digit1a = 0;
 	int digit10b = 0;
 	int digit1b = 0;
-	int number = 0;
 
 	while (digit10a <= 9)
 	{
@@ -28,8 +27,7 @@ int main(void)
 					putchar (' ');
 					putchar (digit10b + '0');
 					putchar (digit1b + '0');
-					number = (digit10a * 10) + digit1a;
-					if (number < 98)
+					if (digit10a <= 9 && digit1a < 9)
 					{
 						putchar (',');
 						putchar (' ');
@@ -40,10 +38,12 @@ int main(void)
 				digit1b = 0;
 			}
 			digit1a++;
-			digit1b = digit1a + 1;
+			digit1b = digit1a;
 			digit10b = digit10a;
 		}
 		digit10a++;
+		digit1b = digit1a
+			digit10b = digit10a;
 	}
 	putchar ('\n');
 	return (0);
