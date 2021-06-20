@@ -14,7 +14,6 @@ int main(void)
 
 	while (digit10a <= 9)
 	{
-		digit10b = digit10a;
 		while (digit1a <= 9)
 		{
 			digit1b++;
