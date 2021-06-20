@@ -7,17 +7,19 @@
 
 int main(void)
 {
-	int duet1 = 00;
-	int duet2 = 00;
+	int duet1 = 0;
+	int duet2 = 0;
 
 	while (duet1 <= 98)
 	{
 		duet2 = duet1 + 01;
 		while (duet2 <= 99)
 		{
-			putchar (duet1 + '0');
+			putchar ((duet1 / 10) + '0');
+			putchar ((duet1 % 10) + '0');
 			putchar (' ');
-			putchar (duet2 + '0');
+			putchar ((duet2 / 10) + '0');
+			putchar ((duet2 % 10) + '0');
 			if (duet1 < 98)
 			{
 				putchar (',');
