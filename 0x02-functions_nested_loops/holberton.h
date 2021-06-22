@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
+#define HOLBERTON_H
 
 /* Prints a character */
 int _putchar(char c);
