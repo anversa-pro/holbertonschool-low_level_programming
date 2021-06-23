@@ -1,12 +1,24 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
+ * main - entry point
  *
  *Return: Always 0 (Success)
  */
 
 int main(void)
 {
+	int i;
+	int sum;
+
+	for (i = 0; i < 1024; i++)
+	{
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
+	}
+	_putchar(sum / 1000 + '0');
+	_putchar((sum / 100) % 10 + '0');
+	_putchar((sum / 10) % 10 + '0');
+	_putchar(sum % 10 + '0');
 	return (0);
 }
