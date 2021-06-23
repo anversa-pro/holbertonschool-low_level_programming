@@ -8,11 +8,37 @@
 
 void print_two_digits(int d)
 {
-	if (d > 0 && d < 100)
+	int temp = d * -1;
+
+	if (d > 9 && d < 100)
 	{
 		_putchar(d / 10 + '0');
 		_putchar(d % 10 + '0');
 	}
+	else if (d >= 0 && d <= 9)
+	{
+		_putchar(d + '0');
+	}
+	else if (d < 0 && d >= -9)
+	{
+		_putchar('-');
+		_putchar(temp);
+	}
+	else if (d < -9 && d > -100)
+	{
+		_putchar('-');
+		_putchar(temp / 10 + '0');
+		_putchar(temp % 10 + '0');
+	}
+}
+
+/**
+ *print_comma_space - function that prints a comma followed by a space
+ */
+void print_comma_space(void)
+{
+	_putchar(',');
+	_putchar(32);
 }
 
 /**
@@ -29,18 +55,13 @@ void print_to_98(int n)
 	{
 		for (aux = n; aux <= 98; aux++)
 		{
-			if (aux >= 0)
+			print_two_digits(aux);
+			if (aux != 98)
 			{
-				print_two_digits(aux);
+				print_comma_space();
 			}
 			else
-			{
-				temp = aux * -1;
-				_putchar('-');
-				print_two_digits(temp);
-			}
-			_putchar(',');
-			_putchar(32);
+				_putchar('\n');
 		}
 	}
 	else
@@ -57,8 +78,12 @@ void print_to_98(int n)
 			{
 				print_two_digits(aux);
 			}
-			_putchar(',');
-			_putchar(32);
+			if (aux != 98)
+			{
+				print_coma_space();
+			}
+			else
+				_putchar('\n');
 		}
 	}
 }
