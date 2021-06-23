@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * _isalpha - Checks for alphabetic character
+ * _isalpha - Intial function to check for alphabetic character
  * @c: input prameter to evaluate
  *Return: 1 if true, 0 otherwise
  */
 
-int m_isalpha(int c)
+int _isalpha(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
