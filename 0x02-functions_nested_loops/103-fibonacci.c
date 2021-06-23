@@ -20,12 +20,10 @@ int main(void)
 		if ((new % 2) == 0 && ant < 4000000)
 		{
 			even = even + new;
-			printf("_%ld_", even);
 		}
 		ant = sum;
 		sum = new;
 	}
-	printf("%ld", even);
-	putchar('\n');
+	printf("%ld\n", even);
 	return (0);
 }
