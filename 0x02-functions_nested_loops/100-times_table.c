@@ -7,7 +7,7 @@
 
 void print_table_numbers(int n)
 {
-	if (n < 9)
+	if (n <= 9)
 	{
 		_putchar(',');
 		_putchar(32);
@@ -16,7 +16,7 @@ void print_table_numbers(int n)
 		_putchar(n + '0');
 
 	}
-	else if (n > 9 && n < 100)
+	else if (n >= 9 && n < 100)
 	{
 		_putchar(',');
 		_putchar(32);
@@ -24,7 +24,7 @@ void print_table_numbers(int n)
 		_putchar(n / 10 + '0');
 		_putchar(n % 10 + '0');
 	}
-	else if (n > 99 && n < 1000)
+	else if (n >= 99 && n < 1000)
 	{
 		_putchar(',');
 		_putchar(32);
