@@ -16,7 +16,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		new = sum + ant;
-		printf("%d", new);
+		printf("%ld", new);
 		ant = sum;
 		sum = new;
 		if (i < 49)
