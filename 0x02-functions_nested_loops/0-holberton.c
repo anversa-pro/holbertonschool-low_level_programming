@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
+ * main - Prints the word "Holberton"
  *
  *Return: Always 0 (Success)
  */
