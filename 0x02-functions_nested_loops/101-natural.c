@@ -13,8 +13,8 @@ int main(void)
 
 	for (i = 0; i < 1024; i++)
 	{
-		if ((i % 3) == 0 || (i % 5) == 0)
-			sum += i;
+		if (((i % 3) == 0) || ((i % 5) == 0))
+			sum = sum + i;
 	}
 	_putchar(sum / 1000 + '0');
 	_putchar((sum / 100) % 10 + '0');
