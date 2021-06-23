@@ -14,13 +14,12 @@ int main(void)
 	long sum = 1;
 	long even = 0;
 
-	for (i = 1; i <= 30; i++)
+	for (i = 1; i <= 35; i++)
 	{
 		new = sum + ant;
-		printf("%ld", new);
 		ant = sum;
 		sum = new;
-		if ((i % 2) != 0 && new < 4000000)
+		if ((i % 2) != 0 && sum < 4000000)
 		{
 			even = even + new;
 		}
