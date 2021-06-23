@@ -36,7 +36,7 @@ void print_two_digits(int d)
 		_putchar(temp / 10 + '0');
 		_putchar(temp % 10 + '0');
 	}
-	else if (d > -1000 && d < -99)
+	else if (d < -99 && d > -1000)
 	{
 		_putchar('-');
 		_putchar(temp / 100 + '0');
@@ -67,10 +67,6 @@ void print_to_98(int n)
 	{
 		for (aux = n; aux <= 98; aux++)
 		{
-			if (aux < -99)
-			{
-				print_two_digits(aux);
-			}
 			print_two_digits(aux);
 			if (aux != 98)
 			{
@@ -84,14 +80,7 @@ void print_to_98(int n)
 	{
 		for (aux = n; aux >= 98; aux--)
 		{
-			if (aux > 99)
-			{
-				print_two_digits(aux);
-			}
-			else
-			{
-				print_two_digits(aux);
-			}
+			print_two_digits(aux);
 			if (aux != 98)
 			{
 				print_comma_space();
