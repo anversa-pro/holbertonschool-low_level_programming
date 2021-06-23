@@ -17,13 +17,13 @@ int main(void)
 	for (i = 1; i <= 35; i++)
 	{
 		new = sum + ant;
-		ant = sum;
-		sum = new;
-		if ((i % 2) != 0 && new < 4000000)
+		if ((i % 2) != 0 && ant < 4000000)
 		{
 			even = even + new;
 			printf("_%ld_", even);
 		}
+		ant = sum;
+		sum = new;
 	}
 	printf("%ld", even);
 	putchar('\n');
