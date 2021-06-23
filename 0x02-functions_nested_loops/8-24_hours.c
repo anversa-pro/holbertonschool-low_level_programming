@@ -1,12 +1,25 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
+ * jack_bauer - prints every minute in 24 hours
  *
- *Return: Always 0 (Success)
+ *Return: no need
  */
 
-int main(void)
+void jack_bauer(void)
 {
-	return (0);
+	int i;
+	int j;
+
+	for (i = 0; i < 24; i++)
+	{
+		for (j = 0; j <= 59; j++)
+		{
+			_putchar (i / 10);
+			_putchar (i % 10);
+			_putchar (';');
+			_putchar (j / 10);
+			_putchar (j % 10);
+		}
+	}
 }
