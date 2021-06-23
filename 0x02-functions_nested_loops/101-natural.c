@@ -16,7 +16,7 @@ int main(void)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 			sum = sum + i;
 	}
-	_putchar(sum / 10000 + '0');
+	_putchar((sum / 10000) + '0');
 	_putchar((sum / 10000) % 10 + '0');
 	_putchar((sum / 1000) % 10 + '0');
 	_putchar((sum / 100) % 10 + '0');
