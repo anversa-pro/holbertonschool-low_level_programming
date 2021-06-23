@@ -1,12 +1,21 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
- *
- *Return: Always 0 (Success)
+ * print_sign - Initial fuction that prints the sign of a number
+ * @n: input parameter to evaluate
+ * Return: 1 if +, 0 if zero, -1 if -
  */
 
-int main(void)
+int print_sign(int n)
 {
-	return (0);
+	if (n == 0)
+	{
+		return (0);
+	}
+	else if (n < 0)
+	{
+		return (-1);
+	}
+	else
+	return (1);
 }
