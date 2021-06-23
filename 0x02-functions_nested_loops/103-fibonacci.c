@@ -19,7 +19,7 @@ int main(void)
 		new = sum + ant;
 		ant = sum;
 		sum = new;
-		if ((i % 2) == 0 && new < 4000000)
+		if ((i % 2) != 0 && new < 4000000)
 		{
 			even = even + new;
 			printf("_%ld_", even);
