@@ -1,12 +1,28 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
+ * times_table - function that prints 9 times table
  *
- *Return: Always 0 (Success)
+ * Return: empty
  */
-
-int main(void)
+void times_table(void)
 {
-	return (0);
+	int i;
+	int j;
+
+	for (i = 0; i < 10; i++)
+	{
+		j = 0;
+		for (j = 0; j <= 9; j++)
+		{
+			_putchar(i * j);
+			if (j != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+				_putchar('\n');
+		}
+	}
 }
