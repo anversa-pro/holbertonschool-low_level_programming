@@ -36,7 +36,7 @@ void print_two_digits(int d)
 		_putchar(temp / 10 + '0');
 		_putchar(temp % 10 + '0');
 	}
-	else if (d > 1000 && d < 99)
+	else if (d > -1000 && d < -99)
 	{
 		_putchar('-');
 		_putchar(temp / 100 + '0');
