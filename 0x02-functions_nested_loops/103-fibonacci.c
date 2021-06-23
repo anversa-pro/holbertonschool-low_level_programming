@@ -23,7 +23,7 @@ int main(void)
 		if ((i % 2) != 0 && new < 4000000)
 			even = even + new;
 	}
-	printf("%ld", even)
+	printf("%ld", even);
 	putchar('\n');
 	return (0);
 }
