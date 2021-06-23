@@ -1,12 +1,15 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
- *
- *Return: Always 0 (Success)
+ * print_last_digit - Prints the last digit of a number
+ * @n: intput parameter
+ *Return: n last digit
  */
 
-int main(void)
+int print_last_digit(int n)
 {
-	return (0);
+	int a;
+
+	a = n % 10;
+	return (a);
 }
