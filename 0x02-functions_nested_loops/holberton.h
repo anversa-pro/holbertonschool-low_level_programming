@@ -42,4 +42,7 @@ void print_to_98(int n);
 /* Prints the n times table, starting with 0 */
 void print_times_table(int n);
 
+/* Prints a number of two digits with _putchar */
+void print_two_digits(int n);
+
 /* END */
