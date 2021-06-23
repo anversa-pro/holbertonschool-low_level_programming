@@ -1,12 +1,17 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
+ * _islower - checks for lowercase charater
  *
- *Return: Always 0 (Success)
+ * Return: 1 if true 0 otherwise
  */
 
-int main(void)
+int _islower(int c)
 {
+	if ('a' >= c >= 'z')
+	{
+		return (1);
+	}
+	else
 	return (0);
 }
