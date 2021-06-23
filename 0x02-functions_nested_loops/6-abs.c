@@ -1,12 +1,16 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
- *
- *Return: Always 0 (Success)
+ * _abs - function that computes the absolute value of an Integer
+ * @n: input parameter
+ *Return: absolute n
  */
 
-int main(void)
+int _abs(int n)
 {
-	return (0);
+	if (n < 0)
+	{
+		n = n * -1;
+	}
+	return (n);
 }
