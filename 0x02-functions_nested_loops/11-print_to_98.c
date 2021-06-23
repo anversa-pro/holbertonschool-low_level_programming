@@ -1,10 +1,25 @@
 #include "holberton.h"
 
 /**
+ *print_two_digits - function to print a number with two digits
+ *@d: input parameter
+ *Return: None
+ */
+
+void print_two_digits(int d)
+{
+	if (d > 0 && d < 100)
+	{
+		_putchar(d / 10 + '0');
+		_putchar(d % 10 + '0');
+	}
+}
+
+/**
  * print_to_98 - function that prints natural numbers from n to 98
  * @n: input parameter
- *Return: empty
  */
+
 void print_to_98(int n)
 {
 	int aux;
