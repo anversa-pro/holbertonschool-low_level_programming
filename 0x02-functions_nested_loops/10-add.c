@@ -1,12 +1,16 @@
 #include "holberton.h"
 
 /**
- * main - Define which is the purpouse
- *
- *Return: Always 0 (Success)
+ * add -function that adds two integers
+ * @i: input parameter 1
+ * @j: input parameter 2
+ * Return: adition result
  */
 
-int main(void)
+int add(int i, int j)
 {
-	return (0);
+	int l;
+
+	l = i + j;
+	return (l);
 }
