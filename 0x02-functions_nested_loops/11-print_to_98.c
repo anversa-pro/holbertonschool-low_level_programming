@@ -49,7 +49,6 @@ void print_comma_space(void)
 void print_to_98(int n)
 {
 	int aux;
-	int temp;
 
 	if (n <= 98)
 	{
@@ -80,7 +79,7 @@ void print_to_98(int n)
 			}
 			if (aux != 98)
 			{
-				print_coma_space();
+				print_comma_space();
 			}
 			else
 				_putchar('\n');
