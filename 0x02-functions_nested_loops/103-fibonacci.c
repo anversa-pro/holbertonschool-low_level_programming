@@ -17,7 +17,7 @@ int main(void)
 	for (i = 1; i <= 35; i++)
 	{
 		new = sum + ant;
-		if ((i % 2) != 0 && ant < 4000000)
+		if ((new % 2) == 0 && ant < 4000000)
 		{
 			even = even + new;
 			printf("_%ld_", even);
