@@ -29,12 +29,13 @@ void times_table(void)
 				else
 					_putchar('\n');
 			}
-			else
+			else if (aux <= 9)
 			{
 				_putchar(aux + '0');
 				if (j != 9)
 				{
 					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 				}
