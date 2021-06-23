@@ -21,16 +21,26 @@ void times_table(void)
 			{
 				_putchar(aux / 10 + '0');
 				_putchar(aux % 10 + '0');
+				if (j != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				else
+					_putchar('\n');
 			}
 			else
-				_putchar(aux + '0');
-			if (j != 9)
 			{
-				_putchar(',');
-				_putchar(' ');
+				_putchar(aux + '0');
+				if (j != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else
+					_putchar('\n');
 			}
-			else
-				_putchar('\n');
 		}
 	}
 }
