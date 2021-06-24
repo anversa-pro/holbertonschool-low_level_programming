@@ -9,14 +9,14 @@
 int main(void)
 {
 	int i;
-	unsigned long long int ant = 0;
-	unsigned long long int new = 0;
-	unsigned long long int sum = 1;
+	unsigned long int ant = 0;
+	unsigned long int new = 0;
+	unsigned long int sum = 1;
 
 	for (i = 0; i < 98; i++)
 	{
 		new = sum + ant;
-		printf("%llu", new);
+		printf("%lu", new);
 		ant = sum;
 		sum = new;
 		if (i < 49)
