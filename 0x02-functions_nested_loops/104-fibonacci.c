@@ -9,14 +9,14 @@
 int main(void)
 {
 	int i;
-	long ant = 0;
-	long new = 0;
-	long sum = 1;
+	long double ant = 0;
+	long double new = 0;
+	long double sum = 1;
 
 	for (i = 0; i < 98; i++)
 	{
 		new = sum + ant;
-		printf("%ld", new);
+		printf("%lf", new);
 		ant = sum;
 		sum = new;
 		if (i < 49)
