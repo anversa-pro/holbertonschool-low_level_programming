@@ -1,5 +1,6 @@
-# Learning Objectives
-### General
+## 0x00 C - Hello, World
+
+### Learning Objectives
 * Why C programming is awesome
 * Who invented C
 * Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds
@@ -14,16 +15,6 @@
 * How to find the right header to include in your source code when using a standard library function
 * How does the main function influence the return value of the program
 
-### Requirements
-* Allowed editors: vi, vim, emacs
-* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
-* All your files should end with a new line
-* A README.md file at the root of the holbertonschool-low_level_programming repo, containing a description of the repository
-* A README.md file, at the root of the folder of this project, containing a description of the project
-* There should be no errors and no warnings during compilation
-* You are not allowed to use system
-* Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-
 ### Shell Scripts
 * Allowed editors: vi, vim, emacs
 * All your scripts will be tested on Ubuntu 20.04 LTS
@@ -33,7 +24,7 @@
 
 ## Betty linter
 To run the Betty linter just with command `betty <filename>`:
-* Go to the Betty repository
+* Go to the Betty repository <https://github.com/holbertonschool/Betty>
 * Clone the repo to your local machine
 * cd into the Betty directory
 * Install the linter with sudo ./install.sh
@@ -62,3 +53,28 @@ done
 Once saved, exit file and change permissions to apply to all users with chmod a+x betty
 Move the betty file into /bin/ directory or somewhere else in your $PATH with sudo mv betty /bin/
 You can now type betty <filename> to run the Betty linter!
+
+## 0x02 FUNCTIONS, NESTED LOOPS
+
+### Learning Objectives
+* What are nested loops and how to use them
+* What is a function and how do you use functions
+* What is the difference between a declaration and a definition of a function
+* What is a prototype
+* Scope of variables
+* What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89
+* What are header files and how to to use them with #include
+    
+    
+## 0x03 DEBUGGING
+
+### Learning objectives
+* What is debugging
+* What are some methods of debugging manually
+* How to read the error messages
+
+    
+    
+    
+    
+__________ END __________
