@@ -21,10 +21,10 @@ int main(void)
 		sum = new;
 		printf(", ");
 	}
-	antt = ant % 1000000000;
-	ant = ant / 1000000000;
-	sumt = sum % 1000000000;
-	sum = sum / 1000000000;
+	antt = ant % 10000000000;
+	ant = ant / 10000000000;
+	sumt = sum % 10000000000;
+	sum = sum / 10000000000;
 	for (i = 92; i < 98; i++)
 	{
 		new = sum + ant;
