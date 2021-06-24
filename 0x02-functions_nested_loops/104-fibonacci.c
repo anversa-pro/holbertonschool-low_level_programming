@@ -28,7 +28,7 @@ int main(void)
 	for (i = 92; i < 98; i++)
 	{
 		new = sum + ant;
-		newt = sumt + ant;
+		newt = sumt + antt;
 		printf("%lu%lu", new, newt);
 		ant = sum;
 		antt = sumt;
