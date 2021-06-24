@@ -19,7 +19,7 @@ int main(void)
 		printf("%lu", new);
 		ant = sum;
 		sum = new;
-		if (i < 49)
+		if (i < 98)
 		{
 			putchar(',');
 			putchar(' ');
