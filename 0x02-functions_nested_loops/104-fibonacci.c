@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int i;
+	int i, res;
 	unsigned long int ant = 0, antt = 0;
 	unsigned long int new = 0, newt = 0;
 	unsigned long int sum = 1, sumt = 0;
@@ -21,14 +21,20 @@ int main(void)
 		sum = new;
 		printf(", ");
 	}
-	antt = ant % 10000000000;
-	ant = ant / 10000000000;
-	sumt = sum % 10000000000;
-	sum = sum / 10000000000;
+	antt = ant % 1000000000;
+	ant = ant / 1000000000;
+	sumt = sum % 1000000000;
+	sum = sum / 1000000000;
 	for (i = 92; i < 98; i++)
 	{
 		new = sum + ant;
 		newt = sumt + antt;
+		res = newt / 1000000000;
+		if (res != 0)
+		{
+			new = new + res;
+			newt = newt % 1000000000;
+		}
 		printf("%lu%lu", new, newt);
 		ant = sum;
 		antt = sumt;
