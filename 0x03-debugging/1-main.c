@@ -1,16 +1,24 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * main - test function that prints if integer is positive or negative
+ * main - causes an infinite loop
  * Return: 0
  */
 
-int main(int)
+int main(void)
 {
 	int i;
 
-	i = 98;
-	positive_or_negative(i);
+	printf("Infinite loop incoming : (\n)");
+
+	i = 0;
+
+	while (i < 0) /* This lines causes an infinite loop, i is always 0*/
+	{
+		putchar (i);
+	}
+
+	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
 }
