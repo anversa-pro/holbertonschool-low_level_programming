@@ -9,21 +9,33 @@
 int main(void)
 {
 	int i;
-	unsigned long int ant = 0;
-	unsigned long int new = 0;
-	unsigned long int sum = 1;
+	unsigned long int ant = 0, antt = 0;
+	unsigned long int new = 0, newt = 0;
+	unsigned long int sum = 1, sumt = 0;
 
-	for (i = 0; i < 98; i++)
+	for (i = 0; i < 92; i++)
 	{
 		new = sum + ant;
 		printf("%lu", new);
 		ant = sum;
 		sum = new;
-		if (i < 98)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		printf(", ");
+	}
+	antt = ant % 1000000000;
+	ant = ant / 1000000000;
+	sumt = sum % 1000000000;
+	sum = sum / 1000000000;
+	for (i = 92; i < 98; i++)
+	{
+		new = sum + ant;
+		newt = sumt + ant;
+		printf("%lu%lu", new, newt);
+		ant = sum;
+		antt = sumt;
+		sum = new;
+		sumt = newt;
+		if (i < 97)
+			printf(", ");
 	}
 	putchar('\n');
 	return (0);
