@@ -1,0 +1,11 @@
+#include "holberton.h"
+
+/**
+ * main - Entry point
+ * @n: Input parameter
+ * Return: 0 always
+ */
+int _isupper(int c)
+{
+	return (0);
+}
