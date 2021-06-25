@@ -13,6 +13,6 @@ int largest_number(int a, int b, int c);
 int convert_day(int, int);
 
 /*Takes a date and prints how many days are*/
-void print_remainig_days(int, int, int);
+void print_remaining_days(int, int, int);
 
 #endif /* HOLBERTON_H */
