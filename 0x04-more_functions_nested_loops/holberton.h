@@ -1,12 +1,37 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
-int _isupper(int c); /* checks uppercase */
+/* Checks uppercase */
+int _isupper(int c);
 
-int _isdigit(int c); /* checks digit */
+/* Checks digit from 0 to 9*/
+int _isdigit(int c);
 
-int mul(int a, int b); /* multiplies tow integers */
+/* Multiplies two integers */
+int mul(int a, int b);
 
-void print_numbers(void); /*prints the numbers from 0 to 9 */
+/* Prints the numbers from 0 to 9 */
+void print_numbers(void);
+
+/* Prints the numbers from 0 to 9 excepto 2 and 4 */
+void print_most_numbers(void);
+
+/* Prints 10 times the numbers from 0 to 14 */
+void more_numbers(void);
+
+/* Draws a straight line in the terminal */
+void print_line(int n);
+
+/* Draws a diagonal line on the temrinal */
+void print_diagonal(int n);
+
+/* Prints a square */
+void print_square(int size);
+
+/* Prints a triangle */
+void print_triangle(int size);
+
+/* Prints an integer */
+void print_number(int n);
 
 #endif /* HOLBERTON_H */
