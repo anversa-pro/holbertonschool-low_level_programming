@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * main - Entry point
- * @a: Input parameter
- * @b: Input parameter
- * Return: 0 always
+ * mul - Multiplies two integers
+ * @a: first number
+ * @b: second number
+ * Return: multiplication result
  */
 int mul(int a, int b)
 {
-	return (0);
+	return (a * b);
 }
