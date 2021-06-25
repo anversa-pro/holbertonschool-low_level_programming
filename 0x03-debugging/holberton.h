@@ -9,4 +9,10 @@ void positive_or_negative(int i);
 /*Returns the largest of 3 numbers*/
 int largest_number(int a, int b, int c);
 
+/*Converts day of month to day od year, without accounting*/
+int convert_day(int, int);
+
+/*Takes a date and prints how many days are*/
+void print_remainig_days(int, int, int);
+
 #endif /* HOLBERTON_H */
