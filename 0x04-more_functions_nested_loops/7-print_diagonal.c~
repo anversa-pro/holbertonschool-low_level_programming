@@ -1,0 +1,7 @@
+#include "holberton.h"
+
+/**
+ * print_diagonal - Draws a diagonal line
+ * @n: input number to set number of lines
+ * REt
+ */
