@@ -1,0 +1,20 @@
+#include "holberton.h"
+
+/**
+ * main - Prints de largest prime factor
+ * Return: 0 always
+ */
+
+int main(void)
+{
+	long long int i, primef;
+	long long int j = 612852475143;
+
+	for (i = 1; i < j; i++)
+	{
+		if ((j % i) == 0)
+			primef = i;
+	}
+	printf("%lld", primef);
+	return (0);
+}
