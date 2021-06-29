@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <string.h>
 
+/* Prints a character */
+int _putchar(char c);
+
 /* Takes a pointer to an int and updates the value it point to to 98 */
 void reset_to_98(int *n);
 
