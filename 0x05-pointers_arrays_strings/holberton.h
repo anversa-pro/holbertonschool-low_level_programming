@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 /* Prints a character */
 int _putchar(char c);
