@@ -16,5 +16,5 @@ char *string_toupper(char *a)
 			a[i] = a[i] - 32;
 		i++;
 	}
-	return a;
+	return (a);
 }
