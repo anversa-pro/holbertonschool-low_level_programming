@@ -16,12 +16,15 @@ char *cap_string(char *a)
 		a[0] = a[0] - 32;
 	while (a[i] != '\0')
 	{
-		j = 0;
-		while (c[j] != '\0')
+		if (a[i] >= 'a' && a[i] <= 'z')
 		{
-			if (a[i - 1] == c[j])
-				a[i] = a[i] - 32;
-			j++;
+			j = 0;
+			while (c[j] != '\0')
+			{
+				if (a[i - 1] == c[j])
+					a[i] = a[i] - 32;
+				j++;
+			}
 		}
 		i++;
 	}
