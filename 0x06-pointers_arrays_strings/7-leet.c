@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * *leet(char *) - encodes a string into 1337
+ * *leet - encodes a string into 1337
  * *@a: input array to modify
  * Return: encode string
  */
