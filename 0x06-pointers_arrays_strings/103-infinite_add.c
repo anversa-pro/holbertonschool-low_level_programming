@@ -11,5 +11,36 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	return (0);
+	int i = 0, j = 0, k = 0;
+
+	while (n1[i] != '\0')
+		i++;
+	while (n2[j] != '\0')
+		j++;
+	i--;
+	j--;
+	size_r--;
+	if (i > size_r || j > size_r)
+		return (0);
+	for (; size_r >= 0; size_r--)
+	{
+		if (i >= 0 && j >= 0)
+		{
+			k = k + n1[i] + n2[j];
+			if (size_r == 0 && k > 10)
+				return (0);
+			if (k < 10)
+				r[size_r] = k;
+			else
+			{
+				r[size_r] = k % 10;
+				k = k / 10;
+			}
+			i--;
+			j--;
+		}
+		else
+			break;
+	}
+	return (r);
 }
