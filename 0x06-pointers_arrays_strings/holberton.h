@@ -33,7 +33,7 @@ char *cap_string(char *);
 char *leet(char *);
 
 /* encondes a string using rot13 */
-char rot13(char *);
+char *rot13(char *);
 
 /* prints an integer */
 void print_number(int n);
