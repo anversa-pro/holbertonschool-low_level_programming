@@ -8,7 +8,15 @@ include "holberton.h"
  * Return: a pointer to the copy me
  */
 
-char *_memcpy(char *dest, char src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return (s);
+	int i = 0;
+
+	while (n > 0)
+	{
+		dest[i] = src[i];
+		i++;
+		n--;
+	}
+	return (dest);
 }
