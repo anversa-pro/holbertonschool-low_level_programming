@@ -1,4 +1,4 @@
-include "holberton.h"
+#include "holberton.h"
 
 /**
  * *_strchr - locates a character in a string
@@ -9,5 +9,13 @@ include "holberton.h"
 
 char *_strchr(char *s, char c)
 {
-	return (s);
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+			return (&s[i]);
+		i++;
+	}
+	return (0);
 }
