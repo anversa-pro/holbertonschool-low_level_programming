@@ -26,7 +26,12 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	{
 		if (i >= 0 && j >= 0)
 		{
-			k = k + n1[i] + n2[j];
+			if (j <= 0 && i >= 0)
+				k = k + (n1[i] - '0');
+			else if (i <= 0 && j >= 0)
+				k = k + (n2[j] - '0');
+			else
+				k = k + n1[i] + n2[j];
 			if (size_r == 0 && k > 10)
 				return (0);
 			if (k < 10)
