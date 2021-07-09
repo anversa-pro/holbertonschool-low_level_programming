@@ -11,12 +11,12 @@
 
 int main(int argc, char *argv[])
 {
-          (void)argv;
-          if (argc != 3)
-          {
-                  printf ("ERROR\n");
-                  return (1);
-          }
-          printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-    return (0);
+	(void)argv;
+	if (argc != 3)
+	{
+		printf("ERROR\n");
+		return (1);
+	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	return (0);
 }
