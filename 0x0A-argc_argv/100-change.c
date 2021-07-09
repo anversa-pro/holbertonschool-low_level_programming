@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 			coins = coins + (number / module);
 			number = number % module;
 		}
+		printf("%d\n", coins);
 	}
-	printf("%d\n", coins);
 	return (0);
 }
