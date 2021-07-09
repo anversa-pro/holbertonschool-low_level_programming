@@ -6,9 +6,6 @@
  * @argv: array of arguements
  * Return: result of multiplication or 1
  **/
-#include <stdio.h>
-#include <stdlib.h>
-
 int main(int argc, char *argv[])
 {
 	(void)argv;
@@ -17,6 +14,6 @@ int main(int argc, char *argv[])
 		printf("ERROR\n");
 		return (1);
 	}
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	printf("%d\n", (atoi(argv[1]) * atoi(argv[2])));
 	return (0);
 }
