@@ -1,4 +1,4 @@
-include "holberton.h"
+#include "holberton.h"
 
 /**
  * _puts_recursion - prints a string, followed by a new line
@@ -8,5 +8,11 @@ include "holberton.h"
 
 void _puts_recursion(char *s)
 {
-	printf("\n");
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
