@@ -24,7 +24,7 @@ int main(void)
     printf("%d\n", r);
     r = _pow_recursion(0, 1);
     printf("%d\n", r);
-    r = _pow_recursion(, 2);
+    r = _pow_recursion(-1, 0);
     printf("%d\n", r);
     return (0);
 }
