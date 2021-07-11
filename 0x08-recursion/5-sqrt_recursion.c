@@ -13,7 +13,7 @@ int find_roots(int n, int r)
 		return (r);
 	if (r * r > n)
 		return (-1);
-	return(find_roots(n, r + 1));
+	return (find_roots(n, r + 1));
 }
 
 /**
