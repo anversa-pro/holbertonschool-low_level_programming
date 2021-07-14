@@ -8,7 +8,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	unsigned int i, j, k, l;
+	unsigned int i, j, k;
 
 	for (i = 0; s1[i] != '\0'; i++)
 		continue;
@@ -21,10 +21,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		s[k] = s1[k];
 	}
-	for (k, l = 0; k <= (i + j); k++, l++)
+	for (k = 0; k <= j; k++)
 	{
-		s[k] = s2[l];
+		s[k + i] = s2[k];
 	}
-	s[k] = '\0';
+	s[k + i] = '\0';
 	return (s);
 }
