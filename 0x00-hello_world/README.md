@@ -11,17 +11,17 @@ Example: if the C file is main.c, the output file should be main.s
 5. 5-printf.c: C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.- Your program should return 0 - Your program should compile without warning when using the -Wall gcc option
 6.  6-size.c : C program that prints the size of various types on the computer it is compiled and run on. - Warnings are allowed - Your program should return 0 - You might have to install the package libc6-dev-i386 on your Linux (Vagrant) to test the -m32 gcc option
 7. Write a blog post that explains all the steps of compilation. Use command lines and examples to illustrate.
-* Use gcc as the compiler
-* Have at least one picture, at the top of the blog post
-* Publish your blog post on Medium or LinkedIn
-* Share your blog post at least on LinkedIn
-* Please, remember that these blogs must be written in English to further your technical ability in a variety of settings
+	* Use gcc as the compiler
+	* Have at least one picture, at the top of the blog post
+	* Publish your blog post on Medium or LinkedIn
+	* Share your blog post at least on LinkedIn
+	* Please, remember that these blogs must be written in English to further your technical ability in a variety of settings
 8. 100-intel: Script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
-* The C file name will be saved in the variable $CFILE.
-* The output file should be named the same as the C file, but with the extension .s instead of .c.
-* Example: if the C file is main.c, the output file should be main.s
+	* The C file name will be saved in the variable $CFILE.
+	* The output file should be named the same as the C file, but with the extension .s instead of .c.
+	* Example: if the C file is main.c, the output file should be main.s
 9. 101-quote; Write a C program that prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error.
-* You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
-* Your program should return 1
-* Your program should compile without any warnings when using the -Wall gcc option
+	* You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+	* Your program should return 1
+	* Your program should compile without any warnings when using the -Wall gcc option
 __________ FIN __________
