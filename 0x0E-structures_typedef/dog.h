@@ -1,11 +1,12 @@
 #ifndef DOG_H
 #define DOG_H
+
 /**
- * struct dog - Define a new struct dog with name, age, owner
+ * struct dog - Define a new struct dog
  * *@name: Pointer to Dog's name
  * @age: Dog's age
  * *@owner: Pointer to Dog's owner
- **/
+ */
 struct dog
 {
 	char *name:
