@@ -29,11 +29,11 @@ To run the Betty linter just with command `betty <filename>`:
 *   cd into the Betty directory
 *   Install the linter with `sudo ./install.sh`
 *   emacs or vi a new file called betty, and copy the script below:
->   `   \#!/bin/bash  
->       \# Simply a wrapper script to keep you from having to use betty-style  
->       \# and betty-doc separately on every item.  
->       \# Originally by Tim Britton (@wintermanc3r), multiargument added by  
->       \# Larry Madeo (@hillmonkey)  
+>   `   \#!/bin/bash
+>       \# Simply a wrapper script to keep you from having to use betty-style
+>       \# and betty-doc separately on every item.
+>       \# Originally by Tim Britton (@wintermanc3r),multiargument added by
+>       \# Larry Madeo (@hillmonkey)
 > 
 >       BIN_PATH="/usr/local/bin"
 >       BETTY_STYLE="betty-style"
@@ -43,13 +43,13 @@ To run the Betty linter just with command `betty <filename>`:
 >          echo "No arguments passed."
 >          exit 1
 >       fi
-> 
+>
 >       for argument in "$@" ; do
->       echo -e "\n========== $argument =========="  
->       \${BIN_PATH}/${BETTY_STYLE} "$argument"  
->       \${BIN_PATH}/${BETTY_DOC} "$argument"  
+>       echo -e "\n========== $argument =========="
+>       \${BIN_PATH}/${BETTY_STYLE} "$argument"
+>       \${BIN_PATH}/${BETTY_DOC} "$argument"
 >       done`
-> 
+>
 *   Once saved, exit file and change permissions to apply to all users with `chmod a+x betty`.
 *   Move the betty file into `/bin/ directory` or somewhere else in your `$PATH` with  `sudo mv betty /bin/`
 *   You can now type `betty <filename` to run the Betty linter!
@@ -85,13 +85,13 @@ To run the Betty linter just with command `betty <filename>`:
 * Scope of variables
 * What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89
 * What are header files and how to to use them with #include
-    
-    
+
+
 ## 0x03 DEBUGGING
 
 ### Learning objectives
 * What is debugging
 * What are some methods of debugging manually
 * How to read the error messages    
-    
+
 __________ END __________
