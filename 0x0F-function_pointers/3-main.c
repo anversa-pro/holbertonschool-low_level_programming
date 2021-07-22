@@ -31,6 +31,11 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
+	if (op_ptr == -1)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
 	printf("%d\n", op_ptr(a, b));
 	return (0);
