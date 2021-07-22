@@ -1,5 +1,6 @@
 #ifndef OPERATION_H
 #define OPERATION_H
+#include <stddef.h>
 
 /**
  * struct op - Struct op
