@@ -23,8 +23,8 @@
 *   The first line of all your files should be exactly `#!/bin/bash`
 
 ##### Betty linter
-To run the Betty linter just with command `betty <filename>`:
-*   Go to the Betty repository <https://github.com/holbertonschool/Betty>
+To run the Betty linter just with command `betty <filename>`:  
+*   Go to the Betty repository <https://github.com/holbertonschool/Betty>  
 *   Clone the repo to your local machine
 *   cd into the Betty directory
 *   Install the linter with `sudo ./install.sh`
@@ -50,9 +50,9 @@ To run the Betty linter just with command `betty <filename>`:
 >       \${BIN_PATH}/${BETTY_DOC} "$argument"
 >       done`
 >
-*   Once saved, exit file and change permissions to apply to all users with `chmod a+x betty`.
-*   Move the betty file into `/bin/ directory` or somewhere else in your `$PATH` with  `sudo mv betty /bin/`
-*   You can now type `betty <filename` to run the Betty linter!
+*   Once saved, exit file and change permissions to apply to all users with `chmod a+x betty`.  
+*   Move the betty file into `/bin/ directory` or somewhere else in your `$PATH` with  `sudo mv betty /bin/`  
+*   You can now type `betty <filename` to run the Betty linter!  
 
 
 ## 0x01. VARIABLES, IF, ELSE, WHILE
@@ -78,7 +78,7 @@ To run the Betty linter just with command `betty <filename>`:
 ## 0x02 FUNCTIONS, NESTED LOOPS
 
 ### Learning Objectives
-* What are nested loops and how to use them
+* What are nested loops and how to use them  
 * What is a function and how do you use functions
 * What is the difference between a declaration and a definition of a function
 * What is a prototype
@@ -90,8 +90,8 @@ To run the Betty linter just with command `betty <filename>`:
 ## 0x03 DEBUGGING
 
 ### Learning objectives
-* What is debugging
-* What are some methods of debugging manually
+* What is debugging  
+* What are some methods of debugging manually  
 * How to read the error messages    
 
 __________ END __________
