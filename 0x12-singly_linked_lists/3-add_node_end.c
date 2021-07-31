@@ -8,7 +8,40 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	int newElemntAddress = 0;
+	unsigned int i = 0, newElementlen = 0;
+	list_t *newElement;
 
-	Return(newElementAddress);
+	if (str == NULL)
+		return (NULL);
+	newElement = malloc(sizeof(list_t));
+	if (newElement == NULL)
+		return (NULL);
+
+	newElementlen = strlen(str);
+	newElement->str = malloc(sizeof(char) * (newElementlen + 1));
+	if (newElement->str == NULL)
+	{
+		free(newElement);
+		return (NULL);
+	}
+	newElement->next = NULL;
+	for (i = 0; str[i]; i++)
+	{
+		newElement->str[i] = str[i];
+	}
+	newElement->len = newElementlen;
+
+	if (*head == NULL)
+	{
+		*head = newElement;
+		return (*head);
+	}
+
+	for (i = 0; ((*head)->next) != NULL; i++)
+	{
+		(*head) = (*head)->next;
+	}
+	
+	(*head)->next = newElement;
+	return (*head);
 }
