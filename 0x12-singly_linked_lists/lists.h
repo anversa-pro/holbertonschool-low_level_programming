@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef LISTS_H
+#define LISTS_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,18 +22,18 @@ typedef struct list_s
 } list_t;
 
 /* function that prints all the elements of a list_t list */
-Prototype: size_t print_list(const list_t *h);
+size_t print_list(const list_t *h);
 
 /* function that returns the number of elements in a linked list_t list */
-Prototype: size_t list_len(const list_t *h);
+size_t list_len(const list_t *h);
 
 /* function that adds a new node at the beginning of a list_t list */
-Prototype: list_t *add_node(list_t **head, const char *str);
+list_t *add_node(list_t **head, const char *str);
 
 /* function that adds a new node at the end of a list_t list */
-Prototype: list_t *add_node_end(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str);
 
 /* function that frees a list_t list */
-Prototype: void free_list(list_t *head);
+void free_list(list_t *head);
 
-#endif /* HOLBERTON_H */
+#endif /* LISTS_H */
