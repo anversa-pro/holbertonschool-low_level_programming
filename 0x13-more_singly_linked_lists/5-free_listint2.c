@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * free_listint2 - Function that frees a listint_t list and sets the head to NULL
+ * free_listint2 - Function that frees a list and sets the head to NULL
  * **@head: double pointer to a linked list
- * @n: data to add at the list
  * Return: void
  */
 
