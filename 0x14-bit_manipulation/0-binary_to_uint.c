@@ -20,7 +20,6 @@ unsigned int binary_to_uint(const char *b)
 			sum += (b[i] - '0') * base;
 			base *= 2;
 		}
-		return (sum);
 	}
-	return (1);
+	return (sum);
 }

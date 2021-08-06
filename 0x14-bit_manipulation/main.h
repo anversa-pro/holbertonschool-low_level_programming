@@ -20,7 +20,7 @@ int set_bit(unsigned long int *n, unsigned int index);
 /* Function that sets the value of a bit to 0 at a given index */
 int clear_bit(unsigned long int *n, unsigned int index);
 
-/* Function that returns the number of bits you would need to flip to get from one number to another */
+/* Returns the number of bits needed to flip to get from 1 number to another */
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 /* Function that checks the endianness */
