@@ -17,5 +17,7 @@ int main(void)
 	printf("%d\n", n);
 	n = get_bit(64, 15);
 	printf("%d\n", n);
+	n = get_bit(1, 0);
+	printf("%d\n", n);
 	return (0);
 }
