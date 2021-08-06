@@ -8,13 +8,8 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int nlength;
-	unsigned long int *ncopy = n;
-
-	for (; *ncopy; nlength++)
-		*ncopy >>= 1;
-	if ((index > (nlength - 1)) || n == NULL)
+	if (index > ((sizeof(n)) * 8))
 		return (-1);
-	*n = ((1 << index) | *n);
+	*n = (1 << index) | *n;
 	return (1);
 }
