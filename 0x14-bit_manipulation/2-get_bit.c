@@ -12,9 +12,9 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int nlength = 0;
 	unsigned long int ncopy = n;
 
-	for(;ncopy; ncopy >>= 1)
+	for (; ncopy; ncopy >>= 1)
 		nlength++;
-	if (index > nlength)
+	if (index > nlength - 1)
 		return (-1);
 	return ((n >> index) & 1);
 }
