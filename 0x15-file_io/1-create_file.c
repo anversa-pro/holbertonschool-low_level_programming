@@ -20,21 +20,21 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	if (text_content != NULL)
+	op = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+	if (op == -1)
+		return (-1);
+	if (text_content == NULL)
+		text_content = "";
+	else
 	{
-		op = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
-		if (op == -1)
-			return (-1);
 		for (; text_content[textsize]; textsize++)
 			continue;
 		wr = write(op, text_content, textsize);
-		if(wr == -1)
-			return (-1);
-		cl = close(op);
-		if (cl == -1)
+		if (wr == -1)
 			return (-1);
 	}
-	else
-		text_content = "";
+	cl = close(op);
+	if (cl == -1)
+		return (-1);
 	return (1);
 }
