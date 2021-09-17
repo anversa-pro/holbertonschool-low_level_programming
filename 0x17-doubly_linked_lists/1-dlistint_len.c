@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_dlistint - Function that retunrs the elements of a dlistint_t list.
+ * dlistint_len - Function that retunrs the elements of a dlistint_t list.
  * *@h: pointer to list
  * Return: Nodes number
  */
