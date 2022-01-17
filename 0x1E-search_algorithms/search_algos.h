@@ -10,4 +10,13 @@
 /* Function that searches for a value in an array using Linear algorithm */
 int linear_search(int *array, size_t size, int value);
 
+/* Function that searches for a value in an array using Binary algorithm */
+int binary_search(int *array, size_t size, int value);
+
+/* Function that splits recursively an array */
+int recursive_split(int *array, int leftIndex, int rightIndex, int value);
+
+/* Function that prints an array */
+void print_array(int *array, int start, int end);
+
 #endif /* SEARCHING_H */
