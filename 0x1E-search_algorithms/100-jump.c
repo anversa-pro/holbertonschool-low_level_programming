@@ -12,36 +12,46 @@
 
 int jump_search(int *array, size_t size, int value)
 {
-    int jumpBlock = 0, index = 0, prevIndex = 0;
+	int jumpBlock = 0, index = 0, prevIndex = 0;
 
-    if (array && size && value && value != ' ')
-    {
-        jumpBlock = sqrt((int)size);
-        for (; index < (int)size; index += jumpBlock)
-        {
-            printf("Value checked array[%d] = [%d]\n", index, array[index]);
-            if (array[index] == value)
-            {
-                prevIndex = index - (int)jumpBlock;
-                printf("Value found between indexes [%d] and [%d]\n", prevIndex, index);
-                return (index);
-            }
-            if (array[index] < value && array[index + jumpBlock] >= value)
-            {
-                printf("Value found between indexes [%d] and [%d]\n", index, (index + jumpBlock));
-                return (findIndex(array, index, index + jumpBlock, value));
-            }
-        }
-    }
-    return (-1);
+	if (array && size && value && value != ' ')
+	{
+		jumpBlock = sqrt((int)size);
+		for (; index < (int)size; index += jumpBlock)
+		{
+			printf("Value checked array[%d] = [%d]\n", index, array[index]);
+			if (array[index] == value)
+			{
+				prevIndex = index - (int)jumpBlock;
+				printf("Value found between indexes [%d] and [%d]\n", prevIndex, index);
+				return (index);
+			}
+			if (array[index] < value && array[index + jumpBlock] >= value)
+			{
+				a = index;
+				b = index + jumpBlock;
+				printf("Value found between indexes [%d] and [%d]\n", a, b);
+				return (findIndex(array, index, index + jumpBlock, value));
+			}
+		}
+	}
+	return (-1);
 }
 
+/**
+ * findIndex - function that searches for a value in a slice of an array
+ * @array: pointer to the first element of the array
+ * @leftIndex: left Index of the evaluated array
+ * @rightIndex: right Index of the evaluated array
+ * @value: is the value to search
+ * Return: The index where value is found otherwise -1
+ */
 int findIndex(int *array, int leftIndex, int rightIndex, int value)
 {
-    for (;leftIndex <= rightIndex; leftIndex++)
-    {
-        if (array[leftIndex] == value)
-            return (leftIndex);
-    }
-    return (-1);
+	for (; leftIndex <= rightIndex; leftIndex++)
+	{
+		if (array[leftIndex] == value)
+			return (leftIndex);
+	}
+	return (-1);
 }
