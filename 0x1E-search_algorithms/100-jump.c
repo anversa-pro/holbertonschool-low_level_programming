@@ -12,7 +12,7 @@
 
 int jump_search(int *array, size_t size, int value)
 {
-	int jumpBlock = 0, index = 0, prevIndex = 0;
+	int jumpBlock = 0, index = 0, prevIndex = 0, a = 0, b = 0;
 
 	if (array && size && value && value != ' ')
 	{
@@ -50,6 +50,7 @@ int findIndex(int *array, int leftIndex, int rightIndex, int value)
 {
 	for (; leftIndex <= rightIndex; leftIndex++)
 	{
+		printf("Value checked array[%d] = [%d]\n", leftIndex, array[leftIndex]);
 		if (array[leftIndex] == value)
 			return (leftIndex);
 	}
